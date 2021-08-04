@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="\t\tSPAM DETECTION PROCESS">
+            <menu><item
+                    android:id="@+id/stat_emil"
+                    android:title="\n\t\tEmails Checked  0" />
+                <item
+                    android:id="@+id/stat_email"
+                    android:title="\t\tEmails Checked  0" />
+                <item
+                    android:id="@+id/stat_filter"
+                    android:title="\t\tSPAM Filtered     0" />
+                <item
+                    android:id="@+id/stat_auto"
+                    android:title="\t\tAuto Detected     0" />
+                <item
+                    android:id="@+id/stat_blacklist"
+                    android:title="\t\tBlack Listed         0" />
+            </menu>
+        </item>
+    <item android:title="\t\tMODEL TRAING">
+        <menu>
+            <item
+                android:id="@+id/statain"
+                android:title="\t\tTraining Emails   0" />
+            <item
+                android:id="@+id/stat_ham"
+                android:title="\t\tHAm                    0" />
+            <item
+                android:id="@+id/stat_spam"
+                android:title="\t\tSPAM                  0" />
+            <item
+                android:id="@+id/stat_status"
+                android:title="\t\tStatus                 0.0%Complete" />
+
+
+        </menu>
+    </item>
+
+</menu>

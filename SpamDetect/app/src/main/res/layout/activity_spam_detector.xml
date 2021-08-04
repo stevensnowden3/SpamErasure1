@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22B8800F"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SpamDetectorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/design_default_color_primary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/viewResult"
+        android:layout_width="357dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/bground1"
+
+        android:backgroundTint="#F1EEF4"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <EditText
+        android:id="@+id/txtmessage"
+        android:layout_width="336dp"
+        android:layout_height="237dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_weight="1"
+        android:background="@drawable/bground"
+        android:foregroundGravity="center"
+        android:gravity="top"
+        android:hint="Message"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spam_system"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <Button
+        android:id="@+id/btnpredict"
+        android:layout_width="106dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginLeft="157dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:gravity="center"
+        android:text="Predict"
+        app:layout_constraintBottom_toTopOf="@+id/viewResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmessage" />
+
+    <TextView
+        android:id="@+id/spam_system"
+        android:layout_width="339dp"
+        android:layout_height="134dp"
+        android:background="@drawable/bground1"
+        android:backgroundTint="#F1EEF4"
+        android:gravity="center"
+        android:text="SPAM DETECTION ANDROID PROJECT USING DEEP LEARNING ALGORITHM... CNN"
+        android:textColor="#12E3CB"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

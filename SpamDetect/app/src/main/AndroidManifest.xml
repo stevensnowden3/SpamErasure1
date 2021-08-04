@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.spamdetect">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/laucherer"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/laucherer"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SpamDetect">
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".StatisticsActivity"
+            android:exported="true"
+            android:parentActivityName=".LogoutActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="true"
+            android:parentActivityName=".LogoutActivity" />
+        <activity
+            android:name=".SendMessage"
+            android:exported="true"
+            android:parentActivityName=".LogoutActivity" />
+        <activity
+            android:name=".ShareActivity"
+            android:exported="true"
+            android:parentActivityName=".LogoutActivity" />
+        <activity
+            android:name=".SpamDetectorActivity"
+            android:exported="true"
+            android:parentActivityName=".LogoutActivity" />
+        <activity android:name=".LogoutActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
